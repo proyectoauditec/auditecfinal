@@ -1,0 +1,9 @@
+{
+  "name": "AUDITEC Demo",
+  "short_name": "AUDITEC",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3559e0",
+  "icons": []
+}
