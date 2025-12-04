@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AUDITEC - Inicio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="manifest" href="manifest.json">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #4b6fff, #3ad0ff);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    .site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .brand {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #fff;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #d1f3ff;
+      transform: translateY(-2px);
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 100px 40px;
+      gap: 60px;
+      max-width: 1100px;
+      margin: auto;
+      position: relative;
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+
+    .left img {
+      width: 360px;
+      filter: drop-shadow(0 0 25px rgba(0,0,0,0.4));
+      animation: float 6s infinite ease-in-out;
+    }
+
+    h1 {
+      font-size: 46px;
+      margin-bottom: 20px;
+      animation: slideDown 1s ease;
+    }
+
+    p {
+      font-size: 22px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 26px;
+      background: #ffffff;
+      border-radius: 15px;
+      color: #1b3faa;
+      text-decoration: none;
+      font-weight: 700;
+      margin-top: 25px;
+      font-size: 20px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #dff6ff;
+      transform: scale(1.07);
+    }
+
+    .shape {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.25;
+      animation: float 6s infinite ease-in-out;
+      z-index: -1;
+    }
+
+    .shape1 {
+      width: 160px;
+      height: 160px;
+      background: #ffffff;
+      top: 20%;
+      left: -60px;
+    }
+
+    .shape2 {
+      width: 220px;
+      height: 220px;
+      background: #a4e7ff;
+      bottom: 10%;
+      right: -80px;
+      animation-delay: 2s;
+    }
+
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes slideDown { from { transform: translateY(-20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+    @keyframes float { 0% { transform: translateY(0); } 50% { transform: translateY(-25px); } 100% { transform: translateY(0); } }
+
+    .site-footer {
+      text-align: center;
+      padding: 25px;
+      margin-top: 60px;
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.1);
+      font-size: 18px;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .left img {
+        width: 250px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">AUDITEC</div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="demo.html">Demo</a>
+      <a href="about.html">Acerca</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="left">
+      <img src="Auditec.png"  />
+    </div>
+    <div class="right">
+      <h1>Elementos de la app</h1>
+      <p>Solución accesible para convertir voz a texto, alertas visuales, historial y modo conversación.</p>
+      <a class="btn" href="demo.html">Ir a la demo interactiva</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; AUDITEC - Tecnológico de Matehuala</p>
+  </footer>
+
+  <script src="js/utils.js"></script>
+</body>
+</html>

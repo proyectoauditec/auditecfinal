@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Contacto - AUDITEC</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #4b6fff, #3ad0ff);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    .site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .brand {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #fff;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #d1f3ff;
+      transform: translateY(-2px);
+    }
+
+    .container {
+      padding: 100px 40px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+      animation: slideDown 1s ease;
+    }
+
+    p, a {
+      font-size: 22px;
+      line-height: 1.6;
+      animation: fadeIn 1.6s ease;
+      color: #fff;
+    }
+
+    .email-box {
+      margin-top: 30px;
+      padding: 20px;
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border-radius: 15px;
+      backdrop-filter: blur(5px);
+      font-size: 22px;
+      animation: float 6s infinite ease-in-out;
+    }
+
+    .shape {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.25;
+      animation: float 6s infinite ease-in-out;
+    }
+
+    .shape1 {
+      width: 160px;
+      height: 160px;
+      background: #ffffff;
+      top: 20%;
+      left: -60px;
+    }
+
+    .shape2 {
+      width: 220px;
+      height: 220px;
+      background: #a4e7ff;
+      bottom: 10%;
+      right: -80px;
+      animation-delay: 2s;
+    }
+
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes slideDown { from { transform: translateY(-20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+    @keyframes float { 0% { transform: translateY(0); } 50% { transform: translateY(-25px); } 100% { transform: translateY(0); } }
+
+    .site-footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="shape shape1"></div>
+  <div class="shape shape2"></div>
+
+  <header class="site-header">
+    <div class="brand">AUDITEC</div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="demo.html">Demo</a>
+      <a href="about.html">Acerca</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Contacto</h1>
+    <p>Estamos aquí para ayudarte. Puedes escribirnos a:</p>
+
+    <div class="email-box">
+      📧 contacto: auditec@gmail.com
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; AUDITEC</p>
+  </footer>
+
+</body>
+</html>
